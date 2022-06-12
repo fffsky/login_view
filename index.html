@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ログイン画面</title>
+        <meta name="description" content="ログイン画面">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+        <!-- JQuery -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="top-txt">
+                <h1>思い出を予約しよう。</h1>
+                <a class="nav-btn" href="#">チェックイン</a>
+                <a class="nav-link" href="#">-新規登録はこちらから-</a>
+            </div>
+            <ul class="slide-items">
+                <li><img src="img/fv1.jpg" alt="Top画像"></li>
+                <li><img src="img/fv2.jpg" alt="Top画像"></li>
+                <li><img src="img/fv3.jpg" alt="Top画像"></li>
+                <li><img src="img/fv4.jpg" alt="Top画像"></li>
+                <li><img src="img/fv5.jpg" alt="Top画像"></li>
+            </ul>
+        </main>
+        <script>
+            $(".slide-items").slick({
+                autoplay: true, // 自動再生
+                autoplaySpeed: 3500, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
+                fade: true, // スライドをフェードイン・フェードアウト
+                cssEase: 'linear',// アニメーション
+                speed: 700, // フェードアニメーションの速度設定
+            });
+        </script>
+    </body>
+</html>

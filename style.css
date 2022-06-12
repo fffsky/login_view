@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/************************************
+文字部分
+*************************************/
+.main {
+    position: relative;
+    margin: 0;
+}
+.top-txt {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 0 auto;
+    font-family : Quicksand, sans-serif;/*Google Font*/
+    z-index: 9999;
+    text-align: center;
+    width: 100%;
+}
+.top-txt h1{
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Yomogi', cursive;
+    margin: 0 0 80px;
+}
+.nav-btn{
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #cca375;
+    color: rgb(000, 037, 056);
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.nav-link{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+}
+/************************************
+画像部分
+*************************************/
+.slide-items {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.slide-items img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.slick-next{
+    right: 0;
+    left: 0%;
+}
+.slick-next:before{
+    display: none;
+}
+.slick-next:after{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .top-txt h1{
+        font-size: 8.5vw;
+    }
+}
